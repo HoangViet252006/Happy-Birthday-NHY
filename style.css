@@ -1,0 +1,154 @@
+* {
+    transition: all 0.2s ease-in-out;
+}
+
+p {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+body {
+    background: #7BD3EA;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    margin: 0;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 12px;
+    line-height: 150%;
+    color: #6b7385;
+}
+
+#btnPlay {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #007bff;
+    /* Màu nền */
+    color: white;
+    /* Màu chữ */
+    font-size: 16px;
+    /* Cỡ chữ */
+    padding: 10px 20px;
+    /* Khoảng cách đệm */
+    border: none;
+    /* Bỏ viền */
+    border-radius: 5px;
+    /* Bán kính bo cong */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    /* Bóng đổ */
+    transition: 0.2s;
+    /* Thời gian chuyển tiếp */
+}
+
+#video {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: none;
+}
+
+#letterImage {
+    /* width: 100%; */
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+
+#content {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    display: none;
+}
+
+.card {
+    background: #fdfdfd;
+    border-radius: 4px;
+    height: 85 * 2vh;
+    width: 80vw;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    overflow: hidden;
+}
+
+@media only screen and (min-width: 1000px) {
+    .card {
+        flex-direction: row-reverse;
+    }
+    .card img.birthday {
+        width: 100%;
+        max-width: 50vw;
+        max-height: unset;
+    }
+    body {
+        font-size: 20px;
+        line-height: 130%;
+    }
+}
+
+@media only screen and (max-height: 640px) {
+    .card {
+        flex-direction: row-reverse;
+    }
+    .card img.birthday {
+        width: 100%;
+        max-width: 50vw;
+        max-height: unset;
+    }
+}
+
+img.birthday {
+    max-height: 40vh;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 10px;
+}
+
+.text {
+    padding: 1em;
+}
+
+.muted {
+    opacity: 0.8;
+}
+
+.titlee {
+    text-align: center;
+    color: black;
+}
+
+.wish {
+    /* text-indent: 50px; */
+    text-align: left;
+}
+
+.space {
+    height: 100px;
+}
+
+.button {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    height: 60px;
+    background-color: rgb(124, 209, 249);
+    width: 80px;
+    border-radius: 10px;
+    border: none;
+    background-attachment: scroll;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
